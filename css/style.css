@@ -1,6 +1,6 @@
 /* Configurações Inicias */
 
-@import url('https://fonts.googleapis.com/css2? family= Bai+Jamjuree:wght@300;400;600 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600&display=swap');
 
 * {
     margin: 0;
@@ -56,6 +56,7 @@ body {
 
 .titulo {
     font-size: 4.0rem;
+    font-weight: 600;
 }
 
 .margin-titulos {
@@ -79,11 +80,11 @@ body {
 
 .btn-download {
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 600;
     border-radius: 25px;
     padding: 15px 35px;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     transition: 0.7s;
     display: inline-block;
 }
@@ -120,8 +121,246 @@ body {
 
 /* Fim Header */
 
-/* Inicio Conteudo */
+/* Section Snippets */
 
+.sub-titulo {
+    font-size: 3.4rem;
+    font-weight: 600;
+}
 
+.snippets-conteudo {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+}
 
-/* Fim Conteudo */
+.img-snippets {
+    width: 100%;
+    height: 100%;
+    transform: translate(-32px);
+}
+
+.container-snippets-text {
+    max-width: 35.0rem;
+    margin-left: 73px;
+}
+
+.config-h3 {
+    color: var(--dark-grayish-blue);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.sub-snippets {
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.font-p {
+    font-size: 1.6rem;
+}
+
+/* Fim Section Snippets */
+
+/* Section Clipboard */
+
+.container-img-clipboard {
+    margin: 110px auto 0 auto;
+    max-width: 85.0rem;
+    max-height: 50.0rem;
+
+}
+
+.img-clipboard {
+    width: 100%;
+    height: 100%;
+}
+
+.margin-clipboard {
+    margin-bottom: 50px
+}
+
+/* Fim Section Clipboard */
+
+/* Section Workflow */
+
+.container-text-workflow,
+.container-images-empresas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 111.0rem;
+    margin: 75px auto 0 auto;
+}
+
+.box-text-workflow {
+    width: 35.0rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.icons-workflow {
+    height: 35px;
+    margin-bottom: 30px;
+}
+
+.img-empresas {
+    object-fit: contain;
+}
+
+.container-images-empresas {
+    margin-top: 150px;
+}
+
+/* Fim Section Workflow */
+
+/* Footer */
+
+.container-footer {
+    width: 100%;
+    min-height: 15.0rem;
+    height: auto;
+    background-color: #F5F6F8;
+}
+
+.box-footer {
+    max-width: 111.0rem;
+    min-height: 15.0rem;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-logo-footer {
+    width: 60px
+}
+
+.box-links-footer-1,
+.box-links-footer-2,
+.box-links-footer-3,
+.container-img-footer {
+    list-style: none;
+    text-align: center;
+}
+
+.link-footer {
+    line-height: 40px;
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    transition: 0.3s;
+}
+
+.link-footer:hover {
+    color: var(--strong-cyan);
+    text-shadow: 0px 0px 7px hsla(171, 66%, 37%, 0.719);
+}
+
+.container-img-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.icon-footer {
+    margin-left: 25px;
+    position: relative;
+}
+
+.icon-footer:hover {
+    transform: scale(1.07);
+    filter: opacity(0.5) drop-shadow(0 0 0 var(--strong-cyan));
+
+}
+
+/* Fim Footer */
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+
+    .margin-bottom,
+    .margin-clipboard,
+    .container-footer {
+        padding: 0 25px;
+    }
+
+    .img-logo {
+        width: 100px;
+    }
+
+    .titulo {
+        font-size: 3.0rem;
+    }
+
+    .text-header {
+        font-size: 1.7rem;
+    }
+
+    .btn-download {
+        padding: 15px 75px;
+    }
+
+    .btn-2 {
+        margin: 25px 0 0 0;
+    }
+
+    .sub-titulo {
+        font-size: 2.6rem;
+    }
+
+    .color {
+        font-size: 1.7rem;
+    }
+
+    .snippets-conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-snippets {
+        transform: translate(0);
+    }
+
+    .container-snippets-text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .box-text-workflow {
+        margin-bottom: 50px;
+    }
+
+    .box-text-workflow h3 {
+        margin-bottom: 15px;
+    }
+
+    .container-images-empresas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-empresas {
+        margin-bottom: 100px;
+    }
+
+    .img-empresas:nth-of-type(5) {
+        margin-bottom: 0;
+    }
+
+    .box-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-logo-footer {
+        margin: 50px 0;
+    }
+
+    .container-img-footer {
+        margin: 25px 0 50px 0;
+    }
+}
+    /* Fim Responsividade */
