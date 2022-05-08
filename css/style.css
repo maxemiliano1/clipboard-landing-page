@@ -1,0 +1,127 @@
+/* Configurações Inicias */
+
+@import url('https://fonts.googleapis.com/css2? family= Bai+Jamjuree:wght@300;400;600 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.8rem;
+    background-color: #fff;
+}
+
+:root {
+    /* Colors Primary */
+
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    /* Colors Neutral */
+
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+/* Fim Configurações Inicias */
+
+/* Header */
+
+.container-header {
+    background-image: url('../img/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100% 363px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-logo {
+    margin: 130px auto 60px auto;
+}
+
+.container-width-titulos {
+    text-align: center;
+    color: var(--dark-grayish-blue);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 4.0rem;
+}
+
+.margin-titulos {
+    margin-bottom: 20px;
+}
+
+.text-header {
+    font-size: 2.0rem;
+}
+
+.color {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    line-height: 30px;
+}
+
+.container-buttons {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-download {
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 25px;
+    padding: 15px 35px;
+    color: #fff;
+    font-size: 1.8rem;
+    transition: 0.7s;
+    display: inline-block;
+}
+
+.btn-1 {
+    background-color: var(--strong-cyan);
+    border-bottom: 3px solid hsl(171, 66%, 37%);
+    box-shadow: 0px 10px 10px rgba(30, 159, 140, 0.400);
+}
+
+.btn-2 {
+    background-color: var(--light-blue);
+    margin-left: 15px;
+    border-bottom: 3px solid hsl(233, 59%, 56%);
+    box-shadow: 0px 10px 10px hsla(233, 59%, 56%, 0.400);
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    transform: scale(1.07);
+}
+
+.btn-1:hover {
+    box-shadow: 0px 10px 10px rgba(30, 159, 140, 0.800);
+}
+
+.btn-2:hover {
+    box-shadow: 0px 10px 10px hsla(233, 59%, 56%, 0.800);
+}
+
+.margin-bottom {
+    margin-bottom: 160px;
+}
+
+/* Fim Header */
+
+/* Inicio Conteudo */
+
+
+
+/* Fim Conteudo */
