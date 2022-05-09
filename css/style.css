@@ -250,6 +250,7 @@ body {
     line-height: 40px;
     text-decoration: none;
     color: var(--dark-grayish-blue);
+    display: block;
     transition: 0.3s;
 }
 
@@ -301,6 +302,8 @@ body {
 
     .btn-download {
         padding: 15px 75px;
+        display: flex;
+        flex-direction: column;
     }
 
     .btn-2 {
@@ -350,17 +353,27 @@ body {
         margin-bottom: 0;
     }
 
+    .container-clipboard {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     .box-footer {
         flex-direction: column;
         align-items: center;
     }
 
     .img-logo-footer {
-        margin: 50px 0;
+        margin: 50px 0 0px 0;
     }
 
     .container-img-footer {
         margin: 25px 0 50px 0;
     }
+
+    .link-footer {
+        display: block;
+    }
 }
-    /* Fim Responsividade */
+
+/* Fim Responsividade */
