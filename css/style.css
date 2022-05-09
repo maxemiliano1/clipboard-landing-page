@@ -79,7 +79,6 @@ body {
 }
 
 .btn-download {
-    text-decoration: none;
     font-weight: 600;
     border-radius: 25px;
     padding: 15px 35px;
@@ -87,6 +86,8 @@ body {
     font-size: 1.7rem;
     transition: 0.7s;
     display: inline-block;
+    border-style: none;
+    cursor: pointer;
 }
 
 .btn-1 {
@@ -267,20 +268,29 @@ body {
 
 .icon-footer {
     margin-left: 25px;
-    position: relative;
 }
 
 .icon-footer:hover {
     transform: scale(1.07);
-    filter: opacity(0.5) drop-shadow(0 0 0 var(--strong-cyan));
+}
 
+.icon-footer:first-child:hover {
+    filter: invert(37%) sepia(19%) saturate(2445%) hue-rotate(187deg) brightness(92%) contrast(80%);
+}
+
+.icon-footer:nth-child(2):hover {
+    filter: invert(45%) sepia(100%) saturate(738%) hue-rotate(174deg) brightness(97%) contrast(95%);
+}
+
+.icon-footer:last-child:hover {
+    filter: invert(21%) sepia(67%) saturate(3009%) hue-rotate(321deg) brightness(107%) contrast(85%);
 }
 
 /* Fim Footer */
 
 /* Responsividade */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
     .margin-bottom,
     .margin-clipboard,
@@ -358,6 +368,7 @@ body {
         align-items: center;
         flex-direction: column;
     }
+
     .box-footer {
         flex-direction: column;
         align-items: center;
